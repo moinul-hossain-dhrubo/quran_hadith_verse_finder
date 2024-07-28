@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Genre Classifier - Result</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2em;
+            font-size: 2em;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        .result-wrapper {
+            background-color: #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .result-heading {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            text-decoration: underline; /* Underline for the heading */
+        }
+
+        .result-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .return-home {
+            font-size: 1.2em;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"><b>Movie Genre Classifier</b></div>
+    <div class="container">
+        <div class="result-wrapper">
+            <p class="result-heading">Predicted movie genres:</p>
+            <p class="result-text">{{ output_text }}</p>
+            <a href="/" class="return-home">Search New</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Genre Classifier</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 2em;
+            font-size: 2em;
+            font-family: 'Georgia', serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+        }
+
+        .description {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-wrapper,
+        .examples {
+            background-color: #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 60%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #text {
+            height: 100px;
+            width: calc(100% - 30px);
+            font-size: 1em;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: none;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            font-size: 1.2em;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .examples-heading {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-decoration: underline; /* Underline for the heading */
+        }
+
+        .example-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .example-list-item {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+
+        .examples-sentence {
+            font-size: 1em;
+            margin-bottom: 10px;
+            font-family: 'Georgia', serif; /* Change font family */
+        }
+
+        .examples-sentence a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .examples-sentence a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: left;
+            font-size: 0.8em;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .footer strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"><b>Movie Genre Classifier</b></div>
+    <div class="container">
+        <div class="description">
+            <p>This Classifier takes 'movie description' as input to predict its probable genres. Enter your description text below.</p>
+        </div>
+        <div class="form-wrapper">
+            <form action="/" method="post">
+                <label for="text">Enter Description</label>
+                <textarea id="text" name="text" placeholder="Type your text here..."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="examples">
+            <p class="examples-sentence">
+                You can find description examples in <a href="https://www.imdb.com/search/title/?title_type=feature" target="_blank">IMDB official website</a> / 
+                <a href="https://www.rottentomatoes.com/browse/movies_in_theaters/" target="_blank">Rotten Tomatoes </a><br/> Click on movie details to find its description and genres</p>
+            <p class="examples-heading">Search Examples:</p>
+            <ul class="example-list">
+                <li class="example-list-item">1. A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate, who invites him to his eccentric family's sprawling estate for a summer never to be forgotten.</li>
+                <li class="example-list-item">2. A cranky history teacher at a remote prep school is forced to remain on campus over the holidays with a troubled student who has no place to go.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        ©All rights reserved<br/> <strong>Moinul Hossain Dhrubo</strong>
+    </div>
+
+</body>
+
+</html>
