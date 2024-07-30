@@ -18,16 +18,21 @@ df = pd.read_csv('quran_hadith.csv')
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def semantic_search(query, model, embeddings, nbrs):
+    # Encode the query
     query_embedding = model.encode([query])[0]
+
+    # Find the k nearest neighbors
     distances, indices = nbrs.kneighbors([query_embedding])
-    similar_sentences = [(df['text'].iloc[idx], dist) for idx, dist in zip(indices[:10], distances)]
+
+    # Return the k most similar sentences and their distances
+    similar_sentences = [(df['text'].iloc[idx], dist) for idx, dist in zip(indices[0], distances[0])]
     return similar_sentences
 
-# Gradio function
 def search_interface(query):
     similar_sentences = semantic_search(query, model, embeddings, nbrs)
     sentences = [sentence for sentence, distance in similar_sentences]
-    return sentences
+    formatted_output = '\n\n'.join(sentences)  # Join sentences with double newlines for separation
+    return formatted_output
 
 pd.set_option('display.max_colwidth', None)
 
