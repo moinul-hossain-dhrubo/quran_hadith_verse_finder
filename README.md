@@ -16,7 +16,7 @@ This project includes data collection from authentic sources that are
 1. [quran.com](https://quran.com/)
 2. [sunnah.com](https://sunnah.com/)
 
-Only Four Hadith books were scraped that are Sahih al-Bukhari, Sahih Muslim, Sunan an-Nasa'i and Sunan Abi Dawud. Scraping codes/scripts can be found in `scraper` folder.
+Only Four Hadith books were scraped that are *Sahih al-Bukhari*, *Sahih Muslim*, *Sunan an-Nasa'i* and *Sunan Abi Dawud*. Scraping codes/scripts can be found in `scraper` folder.
 
 ### **Data Preparation :** <br/>
 
