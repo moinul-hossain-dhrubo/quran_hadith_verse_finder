@@ -20,7 +20,7 @@ Only Four Hadith books were scraped that are Sahih al-Bukhari, Sahih Muslim, Sun
 
 ### **Data Preparation :** <br/>
 
-The data was checked thoroughly before creating the vector database. Each verse was concatenated with its corresponding surah/ hadith so that while retrieving it can also come up with the name of the surah or hadith book. The cleaned data can be found in `data` folder.
+The data was checked thoroughly before creating the vector database. Each verse was concatenated with its corresponding surah/ hadith so that while retrieving it can also come up with the name of the surah or hadith book. The cleaned data can be found in `data` folder. The data preparation process can be found in `notebooks/Quran_Hadith_Semantic_Search.ipynb`.
 
 ### **Vector Database creation:**
 
