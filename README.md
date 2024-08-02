@@ -24,4 +24,12 @@ The data was checked thoroughly before creating the vector database. Each verse 
 
 ### **Vector Database creation:**
 
-The model that was used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability.
+The model that was used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
+
+### **HuggingFace Deployment:**
+
+The model along with the entire pipeline has been deployed in huggingface spaces using gradio interface. You can visit the spcae via [this link](https://huggingface.co/spaces/mhdhrubo/quran_hadith_verse_finder).
+
+### **Web Deployment using API integration:**
+
+Deployed a Flask App built to take user input/query and show the similar verses related to the query. Check the flask  branch or [click here](https://github.com/moinul-hossain-dhrubo/quran_hadith_verse_finder/tree/flask). Live website can be found [here](https://quran-hadith-verse-finder.onrender.com/).
