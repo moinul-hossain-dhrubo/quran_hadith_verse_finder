@@ -2,13 +2,13 @@
 
 ### **Context:** <br/>
 
-In Islam, It is recommended to live life based on Quran and Hadith for every muslims. The Quran, also romanized Qur'an or Koran, is the central religious text of Islam, believed by Muslims to be a revelation directly from God (Allah). The authority of hadith is a source for religious and moral guidance known as Sunnah, which ranks second only to that of the Quran (which Muslims hold to be the word of God revealed to Muhammad).
+In Islam, it is recommended for every Muslim to live life based on the Quran and Hadith. The Quran, also romanized as Qur'an or Koran, is the central religious text of Islam, believed by Muslims to be a direct revelation from God (Allah). The Hadith is a source of religious and moral guidance known as Sunnah, ranking second in authority only to the Quran.
 
-The people who can memorize every Quran verses is known as Ha'fiz. However, it is not possible for every muslim to memorize every verse related to a certain topic. Search engines like Google can help resolving this issue but sometimes there are too many places/ websites to click on to find the authentic information. it will be better if one can find related verses in one place with just one click.
+People who can memorize every verse of the Quran are known as Hafiz. However, it is not feasible for every Muslim to memorize all the verses related to a particular topic. While search engines like Google can help address this issue, they often provide too many links and websites, making it difficult to find authentic information. It would be more efficient to have a tool that provides related verses in one place with just one click.
 
 ### **Objective:**
 
-The goal of this project is to build an application that can retrieve Quran and Hadith verses based on user query just with one click. This project includes data collection from authentic sources, data cleaning, embedding, deployment, API integration.
+The goal of this project is to build an application that retrieves Quran and Hadith verses based on user queries with just one click. This project includes data collection from authentic sources, data cleaning, embedding, deployment, and API integration.
 
 ### **Data Collection:**
 
@@ -20,11 +20,11 @@ Only Four Hadith books were scraped that are *Sahih al-Bukhari*, *Sahih Muslim*,
 
 ### **Data Preparation :** <br/>
 
-The data was checked thoroughly before creating the vector database. Each verse was concatenated with its corresponding surah/ hadith so that while retrieving it can also come up with the name of the surah or hadith book. The cleaned data can be found in `data` folder. The data preparation process can be found in `notebooks/Quran_Hadith_Semantic_Search.ipynb`.
+The data was thoroughly checked before creating the vector database. Each verse was concatenated with its corresponding surah or hadith so that the retrieval can include the name of the surah or hadith book. The cleaned data can be found in the `data` folder. The data preparation process is documented in `notebooks/Quran_Hadith_Semantic_Search.ipynb`.
 
 ### **Vector Database creation:**
 
-The model that was used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
+The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
 
 ### **HuggingFace Deployment:**
 
