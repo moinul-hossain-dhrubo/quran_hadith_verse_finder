@@ -8,14 +8,16 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
+            background-image: url('static/images/background_image.jpg');
+            background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
         }
 
         .header {
             text-align: center;
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
             color: #fff;
             padding: 2em;
             font-size: 2em;
@@ -34,13 +36,16 @@
             text-align: center;
             margin-bottom: 30px;
             font-size: 1.2em;
-            color: #555;
+            color: #fff; /* Change color to white */
             font-weight: bold;
+            background-color: rgba(58, 57, 57, 0.63); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 10px;
         }
 
         .form-wrapper,
         .examples {
-            background-color: #ddd;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
@@ -77,40 +82,6 @@
             cursor: pointer;
         }
 
-        .examples-heading {
-            font-size: 1.2em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-decoration: underline; /* Underline for the heading */
-        }
-
-        .example-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .example-list-item {
-            margin-bottom: 10px;
-            line-height: 1.5;
-            font-weight: bold;
-        }
-
-        .examples-sentence {
-            font-size: 1em;
-            margin-bottom: 10px;
-            font-family: 'Georgia', serif; /* Change font family */
-        }
-
-        .examples-sentence a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .examples-sentence a:hover {
-            text-decoration: underline;
-        }
-
         .footer {
             text-align: left;
             font-size: 0.8em;
@@ -118,7 +89,9 @@
             margin-left: 20px;
             margin-bottom: 20px;
             font-family: 'Courier New', Courier, monospace;
+            color: #fff; /* Change color to white */
         }
+
         .footer strong {
             font-weight: bold;
         }
@@ -138,19 +111,9 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-<!--         <div class="examples">
-            <p class="examples-sentence">
-                You can find description examples in <a href="https://www.imdb.com/search/title/?title_type=feature" target="_blank">IMDB official website</a> / 
-                <a href="https://www.rottentomatoes.com/browse/movies_in_theaters/" target="_blank">Rotten Tomatoes </a><br/> Click on movie details to find its description and genres</p>
-            <p class="examples-heading">Search Examples:</p>
-            <ul class="example-list">
-                <li class="example-list-item">1. A student at Oxford University finds himself drawn into the world of a charming and aristocratic classmate, who invites him to his eccentric family's sprawling estate for a summer never to be forgotten.</li>
-                <li class="example-list-item">2. A cranky history teacher at a remote prep school is forced to remain on campus over the holidays with a troubled student who has no place to go.</li>
-            </ul>
-        </div>
-    </div> -->
+    </div>
     <div class="footer">
-        ©All rights reserved<br/> <strong>Moinul Hossain Dhrubo</strong>
+        ©All rights reserved<br /> <strong>Moinul Hossain Dhrubo</strong>
     </div>
 
 </body>
