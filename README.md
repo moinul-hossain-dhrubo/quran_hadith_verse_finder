@@ -1,4 +1,4 @@
-# Quran_Hadith_verse_finder
+# Quran Hadith Verse Finder
 
 ### **Context:** <br/>
 
