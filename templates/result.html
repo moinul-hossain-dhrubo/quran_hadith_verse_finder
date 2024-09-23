@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Georgia', serif;
-            background-image: url('/static/images/result_image.jpg'); /* Add background image */
+            background-image: url('/static/images/result_image.jpg');
             background-size: cover;
             background-position: center;
             margin: 0;
@@ -17,7 +17,7 @@
 
         .header {
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            background-color: rgba(0, 0, 0, 0.7);
             color: #fff;
             padding: 2em;
             font-size: 2em;
@@ -25,31 +25,38 @@
 
         .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 80vh;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 100%;
         }
 
-        .result-wrapper {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+        .box {
+            background-color: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            width: 60%;
-            text-align: center;
+            width: 45%;
+            text-align: left;
             margin-bottom: 20px;
+            max-height: 300px; /* Set a maximum height for the scrollable area */
+            overflow-y: auto;  /* Enable vertical scrolling if the content exceeds the height */
         }
 
         .result-heading {
             font-size: 1.5em;
+            font-weight: bold; /* Make the heading bold */
             margin-bottom: 10px;
-            text-decoration: underline; /* Underline for the heading */
+            text-align: center; /* Center align the headings */
+            text-decoration: underline;
         }
 
         .result-text {
             font-size: 1.2em;
             margin-bottom: 10px;
+            white-space: pre-line; /* This ensures that newlines are rendered */
         }
 
         .return-home {
@@ -63,18 +70,42 @@
             text-decoration: none;
             display: inline-block;
             margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <div class="header"><b>Similar Sentences</b></div>
+
     <div class="container">
-        <div class="result-wrapper">
-            <p class="result-heading">Similar Sentences found related to Query:</p>
-            <p class="result-text">{{ output_text }}</p>
-            <a href="/" class="return-home">Search New</a>
+        <!-- Quran Results -->
+        <div class="box">
+            <p class="result-heading">Related Quran Verses:</p>
+            {% if quran_results %}
+                {% for result in quran_results %}
+                    <p class="result-text">{{ result|safe }}</p> <!-- Render text with newlines -->
+                {% endfor %}
+            {% else %}
+                <p class="result-text">No related Quran verses found.</p>
+            {% endif %}
         </div>
+
+        <!-- Hadith Results -->
+        <div class="box">
+            <p class="result-heading">Related Hadith Verses:</p>
+            {% if hadith_results %}
+                {% for result in hadith_results %}
+                    <p class="result-text">{{ result|safe }}</p> <!-- Render text with newlines -->
+                {% endfor %}
+            {% else %}
+                <p class="result-text">No related Hadith verses found.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="/" class="return-home">Search New</a>
     </div>
 </body>
 
