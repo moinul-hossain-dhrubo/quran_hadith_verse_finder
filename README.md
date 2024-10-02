@@ -28,7 +28,7 @@ The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`.
 
 ### **HuggingFace Deployment:**
 
-Two separate spaces were created for finding Quran and Hadith verses. The models along with the entire pipeline has been deployed in huggingface spaces using gradio interface. You can visit the spcae via [this link](https://huggingface.co/spaces/mhdhrubo/quran_hadith_verse_finder).
+Two separate spaces were created for finding Quran and Hadith verses. The models along with the entire pipeline has been deployed in huggingface spaces using gradio interface. You can visit the spaces via [Quran_verse_finder](https://huggingface.co/spaces/mhdhrubo/quran_verse_finder) and [Hadith_verse_finder](https://huggingface.co/spaces/mhdhrubo/hadith_verse_finder)
 
 ### **Web Deployment using API integration:**
 
