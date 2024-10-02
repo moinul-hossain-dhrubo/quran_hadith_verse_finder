@@ -24,7 +24,7 @@ The data was thoroughly checked before creating the vector database. Each verse 
 
 ### **Vector Database creation:**
 
-The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. Seaprate embeddings/vector databases were created for Quran and four Hadith books combined. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
+The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. Seaprate embeddings/vector databases were created for Quran and four Hadith books combined. The embeddings/ vector database can be found in `models` directory.
 
 ### **HuggingFace Deployment:**
 
