@@ -24,11 +24,11 @@ The data was thoroughly checked before creating the vector database. Each verse 
 
 ### **Vector Database creation:**
 
-The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
+The model used to embed the dataset is `sentence-transformers/all-MiniLM-L6-v2`. Model documentation can be found [here](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2). This model is specialized for creating semantic sarch application with its sentence embedding capability. Seaprate embeddings/vector databases were created for Quran and four Hadith books combined. The embeddings/ vector database can be found in `model/ embeddings.pkl`.
 
 ### **HuggingFace Deployment:**
 
-The model along with the entire pipeline has been deployed in huggingface spaces using gradio interface. You can visit the spcae via [this link](https://huggingface.co/spaces/mhdhrubo/quran_hadith_verse_finder).
+Two separate spaces were created for finding Quran and Hadith verses. The models along with the entire pipeline has been deployed in huggingface spaces using gradio interface. You can visit the spcae via [this link](https://huggingface.co/spaces/mhdhrubo/quran_hadith_verse_finder).
 
 ### **Web Deployment using API integration:**
 
