@@ -32,10 +32,10 @@ Two separate spaces were created for finding Quran and Hadith verses. The models
 
 ### **Web Deployment using API integration:**
 
-Deployed a Flask App built to take user input/query and show the similar verses related to the query. Check the flask  branch or [click here](https://github.com/moinul-hossain-dhrubo/quran_hadith_verse_finder/tree/flask). Live website can be found [here](https://quran-hadith-verse-finder.onrender.com/).
+Deployed a Flask App built to take user input/query and show the similar verses separately for Quran and Hadith that are related to the query. Check the flask  branch or [click here](https://github.com/moinul-hossain-dhrubo/quran_hadith_verse_finder/tree/flask). Live website can be found [here](https://quran-hadith-verse-finder.onrender.com/).
 
 ![quran_hadith_app_home](https://github.com/user-attachments/assets/27bf614c-e15b-4d94-b7b4-d3141cb19a71)
 
-![quran_hadith_app_result](https://github.com/user-attachments/assets/1c7466d3-dcf1-4199-86b0-4f037831eb48)
+![quran_hadith_app_result](https://github.com/user-attachments/assets/85b8dece-a1ef-405e-be78-2fd3fd50f08c)
 
 
